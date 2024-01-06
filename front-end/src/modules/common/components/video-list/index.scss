@@ -1,0 +1,9 @@
+.videopreview {
+  transition: 0.5s;
+  margin: 10px;
+  box-shadow: 0 0 #772ce8;
+  &:hover {
+    box-shadow: -5px 5px #772ce8;
+    transform: translate(5px, -5px);
+  }
+}

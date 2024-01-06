@@ -1,0 +1,18 @@
+@import url("https://vjs.zencdn.net/8.5.2/video-js.min.css");
+
+.video-js .vjs-control-bar {
+  display: none;
+  position: absolute !important;
+  width: 100%;
+  bottom: 0;
+  z-index: 999;
+}
+
+.video-js.videopreview {
+  margin: 0;
+}
+
+.video-js .vjs-tech {
+  position: relative !important;
+  width: 100%;
+}

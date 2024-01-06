@@ -1,0 +1,22 @@
+@import "tailwindcss/base";
+
+.tab-trigger {
+  @apply data-[state=active]:bg-[#008170] h-[50px] data-[state=active]:shadow-[inset_0_-1px_0_0,0_1px_0_0] outline-none cursor-default font-bold text-xl;
+}
+
+.signup__tab,
+.login__tab {
+  @apply max-h-0 overflow-hidden;
+}
+
+.signup__tab[data-state="active"],
+.login__tab[data-state="active"] {
+  @apply max-h-full;
+  transition: max-height 0.25s ease-in;
+}
+
+.signup__tab[data-state="inactive"],
+.login__tab[data-state="inactive"] {
+  @apply max-h-0 overflow-hidden;
+  transition: max-height 0.25s ease-out;
+}
